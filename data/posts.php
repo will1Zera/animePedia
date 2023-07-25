@@ -18,7 +18,7 @@
     [
       'id' => 3,
       'title' => 'Parasyte: A Simbiose da Sobrevivência',
-      'description' => 'Prepare-se para uma experiência intensa com "Parasyte", um anime que mescla horror e ficção científica em uma trama eletrizante.',
+      'description' => 'Prepare-se para uma experiência intensa com Parasyte, um anime que mescla horror e ficção científica em uma trama eletrizante.',
       'tags' => ['recomendações', 'ficção científica', 'horror', 'sobrevivência', 'animes'],
       'img' => 'parasyte-img.jpg'
     ],
