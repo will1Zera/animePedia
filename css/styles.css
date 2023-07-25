@@ -1,3 +1,163 @@
+/* Estilização global */
+
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    min-height: 100vh;
+    position: relative;
+}
+
+main{
+    margin-bottom: 250px;
+}
+
+/* Navbar */
+
+#logo h2{
+    color: black;
+    font-size: 27px;
+}
+
+#logo span{
+    color: #3434FF;
+    padding-right: 300px;
+}
+
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    list-style: none;
+    transition: 0.5s;
+    border-bottom: 1px solid #F2F7FA;
+}
+
+#navbar a{
+    margin: 0 15px;
+    padding: 5px;
+}
+
+.nav-link{
+    transition: 0.5s;
+}
+
+.nav-link:hover{
+    color: #3434FF;
+}
+
+header a{
+    text-decoration: none;
+    list-style: none;
+    color: #707070;
+}
+
+/* Home */
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title-container{
+    max-width: 1200px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-container h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+#title-container p{
+    margin-top: 30px;
+    color: #707070;
+}
+
+#title-container img{
+    width: 450px;
+    margin-right: 30px;
+}
+
+#posts-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-box{
+    min-width: 400px;
+    flex: 1 1 0;
+    margin: 0 2%;
+    margin-bottom: 100px;
+}
+
+.post-box img{
+    width: 100%;
+}
+
+.post-box .post-title{
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.post-box .post-title a{
+    color: black;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.post-box .post-title a:hover{
+    color: #3434FF;
+}
+
+.post-box .post-description{
+    color: #707070;
+}
+
+.tags-container{
+    margin-top: 20px;
+}
+
+.tags-container a{
+    font-size: 14px;
+    color: #707070;
+    transition: 0.5s;
+}
+
+.tags-container a:hover{
+    color: #3434FF;
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: #06132D;
+    color: white;
+    padding: 50px 0px;
 }

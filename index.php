@@ -1,19 +1,34 @@
 <?php
-    include_once("utils/url.php");
+    include_once("templates/header.php");
 ?>
 
-<!DOCTYPE html>
-<html lang="pt_BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnimePedia | Seu blog de animes</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="<?= $BASE_URL ?>/css/styles.css">
-</head>
-<body>
-    <h1>AnimePedia</h1>
-</body>
-</html>
+    <main id="container">
+        <div id="title-container">
+            <div>
+                <img src="<?= $BASE_URL ?>/img/anime-img.png" alt="Anime image">
+            </div>
+            <div>
+                <h1>AnimePedia, o portal para <br>seu mundo de animes</h1>
+                <p>Bem-vindo ao blog definitivo para todos os fãs de animes.</p>
+                <p>Explore os mais emocionantes enredos, conheça personagens <br>inesquecíveis e descubra novos universos que irão cativar sua <br>imaginação.</p>
+            </div>
+        </div>
+        <div id="posts-container">
+            <?php foreach($posts as $post): ?>
+                <div class="post-box">
+                    <img src="<?= $BASE_URL ?>/img/<?= $post['img'] ?>" alt="<?= $post['title'] ?>">
+                    <h3 class="post-title"><a href="<?= $BASE_URL ?>post.php?id=<?= $post['id'] ?>"><?= $post['title'] ?></a></h3>
+                    <p class="post-description"><?= $post['description'] ?></p>
+                    <div class="tags-container">
+                        <?php foreach($post['tags'] as $tag): ?>
+                            <a href="#"><?= $tag ?></a>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </main>
+
+<?php
+    include_once("templates/footer.php");
+?>
