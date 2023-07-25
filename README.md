@@ -7,10 +7,8 @@
   AnimePedia é um blog de recomedações e indicações de vários animes
 </p>
 <p align="center">
-  <img src="https://github.com/will1Zera/studentCRUD/blob/master/img/crudGif.gif?raw=true" align="center" style="border-radius: 10px" />
+  <img src="https://github.com/will1Zera/animePedia/blob/master/animepedia.gif?raw=true" align="center" style="border-radius: 10px" />
 </p>
-
-Link para o [servidor hospedado](https://studentcrud-76ac634e3d30.herokuapp.com/)
 
 ## Tecnologias 👨‍💻 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
@@ -31,4 +29,3 @@ Praticar conceitos aprendidos no curso da Udemy de PHP. Entre eles:
 
 
 by [William Bierhals](https://github.com/will1Zera)
-
